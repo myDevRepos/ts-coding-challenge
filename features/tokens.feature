@@ -2,7 +2,7 @@
 @wip
 Feature: Token Service Use Cases
   Demonstration of the understanding of the Hedera Hashgraph Token Service and transaction model
-
+  @dev
   Scenario: Create a mintable token
     Given A Hedera account with more than 10 hbar
     When I create a token named Test Token (HTT)
@@ -12,6 +12,7 @@ Feature: Token Service Use Cases
     And The token is owned by the account
     And An attempt to mint 100 additional tokens succeeds
 
+  @dev
   Scenario: Create a fixed supply token
     Given A Hedera account with more than 10 hbar
     When I create a fixed supply token named Test Token (HTT) with 1000 tokens
